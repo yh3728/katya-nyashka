@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <title>cool game</title>
+</head>
+<body>
+<!--TODO рефактор: вынести в отдельный класс экраны-->
+    <div id="game-wrapper">
+        <div id="game-container">
+            <div id="menu">
+                <h1>Бимбо поиск предметов искать предметы без смс и регистрации</h1>
+                <button id="menu-button">Играть</button>
+            </div>
+            <div id="tutorial" style="display: none">
+                <h1>Мы тут просто картинку какую-нибудь покажем с инструкцией</h1>
+                <button id="next-button">Дальше</button>
+            </div>
+            <div id="playing" style="display: none">
+                <button id="pause-button">Пауза</button>
+                <div id="game-field"></div>
+                <div id="items-bar"></div>
+            </div>
+            <div id="paused" style="display: none">
+                <div id="paused-modal">
+                    <h1>Пауза няшно</h1>
+                    <button id="back-to-game-button">Обратно к игре</button>
+                    <button class="restart-button">Заново</button>
+                </div>
+            </div>
+            <div id="win" style="display: none">
+                <h1>Ура победа ура ура победа ура победа</h1>
+                <button class="restart-button">Заново</button>
+                <button id="back-to-menu-button">В меню</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/game.js"></script>
+</body>
+</html>
