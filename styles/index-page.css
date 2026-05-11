@@ -1,0 +1,38 @@
+body {
+    background-image: url("/images/backgrounds/sky-bg.png");
+    background-repeat: repeat-y;
+}
+
+.house-section img {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*TODO вынести цвета в переменные*/
+.about-section {
+    background-image: url("/images/backgrounds/bg-1.png");
+    background-size: cover;
+    box-sizing: border-box;
+    color: #E5E5D6;
+    padding: 0 3vw;
+}
+
+#gallery {
+    position: absolute;
+    height: 60vh;
+    overflow: hidden;
+    padding-left: 5vw;
+}
+
+#gallery img {
+    height: 100%;
+}
+
+.girl-image {
+    position: relative;
+    padding-top: 30vh;
+    z-index: 100;
+}
+
+

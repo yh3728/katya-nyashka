@@ -1,4 +1,72 @@
-body {
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../fonts/Alegreya.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya';
+    src: url('../fonts/Alegreya-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Volshebstvo';
+    src: url('../fonts/TDVolshebstvo.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
+    font-family: 'Volshebstvo', fantasy !important;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya', serif;
+    font-size: 1.5rem;
+    background: #c9bebe;
+    overflow-x: hidden;
+}
+
+.navbar-brand, .nav-link {
+    font-size: 1.5rem !important;
+    color: #5D312D !important;
+}
+
+footer {
+    background-image: url("/images/backgrounds/footer.png");
+    background-size: cover;
+}
+
+footer a {
+    text-decoration: none;
+    color: #505C50;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #E5E5D6;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 4.5rem;
+    padding: 15vh 0 5vh;
+}
+
+.centered-text {
+    text-align: center;
 }
