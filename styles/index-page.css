@@ -1,6 +1,6 @@
 body {
-    background-image: url("/images/backgrounds/sky-bg.png");
-    background-repeat: repeat-y;
+    background-image: url("../images/backgrounds/sky-bg.png");
+    background-repeat: repeat;
 }
 
 .house-section img {
@@ -11,7 +11,7 @@ body {
 
 /*TODO вынести цвета в переменные*/
 .about-section {
-    background-image: url("/images/backgrounds/bg-1.png");
+    background-image: url("../images/backgrounds/bg-1.png");
     background-size: cover;
     box-sizing: border-box;
     color: #E5E5D6;

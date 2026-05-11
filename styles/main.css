@@ -46,7 +46,7 @@ body {
 }
 
 footer {
-    background-image: url("/images/backgrounds/footer.png");
+    background-image: url("../images/backgrounds/footer.png");
     background-size: cover;
 }
 
