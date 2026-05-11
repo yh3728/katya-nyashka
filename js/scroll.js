@@ -1,37 +1,36 @@
 const gallery = document.querySelector('#gallery');
+const houseSection = document.querySelector('.house');
+const leftPart = document.querySelector('.house-left');
+const rightPart = document.querySelector('.house-right');
 
 window.addEventListener('scroll', () => {
-    handleScroll(gallery, gallery, null, [-2500, 0]);
-})
+    handleScroll(gallery, gallery, 0, [-2000, 0], 0.4, 0.65);
 
-// moveContainer - контейнер, что мы двигаем,
-// observedElement - элемент, который мы при скролле отслеживаем,
-// rotate - угол, на который вертим, translate - сдвиг вправо или вниз в пикселях
-function handleScroll(moveContainer, observedElement, rotate, translate) {
-    const obs = observedElement.getBoundingClientRect();
-    const move = moveContainer.getBoundingClientRect();
+    const width = window.innerWidth / 2;
+
+    handleScroll(leftPart, houseSection, 0, [-width, 0], 0, 0.5);
+    handleScroll(rightPart, houseSection, 0, [width, 0], 0, 0.5);
+});
+
+function handleScroll(moveContainer, observedElement, rotate, translate, startThreshold = 0, endThreshold = 1) {
+    const rect = observedElement.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
-    const start = obs.bottom - windowHeight;
-    const end = obs.top;
+    let progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+    progress = Math.max(0, Math.min(1, progress));
 
-    const distance = end - start || 1;
+    let activeProgress = (progress - startThreshold) / (endThreshold - startThreshold);
 
-    let progress = (0 - start) / distance;
-
-    if (progress < 0) progress = 0;
-    if (progress > 1) progress = 1;
+    activeProgress = Math.max(0, Math.min(1, activeProgress));
 
     const transforms = [];
 
     if (rotate) {
-        transforms.push(`rotate(${progress * rotate}deg)`);
+        transforms.push(`rotate(${activeProgress * rotate}deg)`);
     }
 
     if (translate) {
-        transforms.push(
-            `translate(${progress * translate[0]}px, ${progress * translate[1]}px)`
-        );
+        transforms.push(`translate(${activeProgress * translate[0]}px, ${activeProgress * translate[1]}px)`);
     }
 
     moveContainer.style.transform = transforms.join(" ");

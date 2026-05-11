@@ -45,6 +45,14 @@ body {
     color: #5D312D !important;
 }
 
+.nav-link {
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+}
+
 footer {
     background-image: url("../images/backgrounds/footer.png");
     background-size: cover;
@@ -58,6 +66,10 @@ footer a {
 footer a:hover {
     text-decoration: none;
     color: #E5E5D6;
+}
+
+.footer-svg:hover {
+    fill: #E5E5D6  ;
 }
 
 .section-title {
