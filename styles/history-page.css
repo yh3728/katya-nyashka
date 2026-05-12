@@ -91,6 +91,7 @@ body {
 }
 
 .background-white {
+    width: 100vw;
     position: absolute;
     bottom: 0;
     z-index: -10;
