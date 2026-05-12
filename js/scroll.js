@@ -4,6 +4,7 @@ const leftPart = document.querySelector('.house-left');
 const rightPart = document.querySelector('.house-right');
 
 window.addEventListener('scroll', () => {
+    // TODO сделать уезд за экран в относительных величинах
     handleScroll(gallery, gallery, 0, [-2000, 0], 0.4, 0.65);
 
     const width = window.innerWidth / 2;

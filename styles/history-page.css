@@ -1,0 +1,97 @@
+body {
+    width: 100vw;
+    background-image: url("../images/backgrounds/bg-2.png");
+    background-size: cover;
+    color: #E5E5D6
+}
+
+.nav-link, .navbar-brand {
+    color: #E5E5D6 !important;
+}
+
+#from-history {
+    padding-top: 45vh;
+    color: #261A16;
+}
+
+.alex1 {
+    position: relative;
+}
+
+.alex1 p {
+    position: relative;
+    top: 22vh;
+    width: 32vw;
+    margin-left: -15%;
+}
+
+.alex1 img {
+    height: auto;
+    min-width: 50vw;
+    max-width: 70vw;
+}
+
+.alex2 {
+    position: relative;
+    width: 100vw;
+    padding-right: 5vw;
+}
+
+.alex2 .text {
+    margin-right: -2%;
+    position: relative;
+    top: 10vh;
+    width: 35vw;
+}
+
+.alex2 p {
+    position: relative;
+    top: 22vh;
+    padding-bottom: 1vh;
+}
+
+.alex2 img {
+    height: auto;
+    min-width: 30vw;
+    max-width: 60vw;
+}
+
+#new-uniforms {
+    color: #3F352E;
+}
+
+#new-uniforms .text {
+    padding-top: 10vh;
+    width: 35vw;
+}
+
+.soldatiki {
+    /*margin-left: 10vw;*/
+    max-width: 30vw;
+    z-index: 100;
+}
+
+.soldati-container {
+    position: relative;
+    bottom: -14vh;
+}
+
+#monument {
+    position: relative;
+    background-image: url("../images/backgrounds/doska.png");
+    background-size: cover;
+}
+
+#monument h3 {
+    padding-top: 30vh;
+}
+
+.about-monument {
+    padding: 15vh 0;
+}
+
+.background-white {
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+}
