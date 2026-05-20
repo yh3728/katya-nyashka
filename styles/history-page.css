@@ -1,0 +1,154 @@
+body {
+    width: 100vw;
+    background-image: url("../images/backgrounds/bg-2.png");
+    background-size: cover;
+    color: #E5E5D6
+}
+
+.nav-link, .navbar-brand {
+    color: #E5E5D6 !important;
+}
+
+.architect-container {
+    width: 90vw;
+    height: 70vh;
+}
+
+.architect-container img{
+    height: 100%;
+}
+
+.architect-container .text{
+    width: 50%;
+}
+
+#street {
+    position: relative;
+    height: 115vh;
+    width: 100vw;
+}
+
+.houses {
+    height: 100%;
+}
+
+#pink-house {
+    height: 70%;
+    right: 50vw;
+    z-index: 11;
+}
+
+#yellow-house {
+    position: relative;
+    left: 0;
+    height: 100%;
+    z-index: 11;
+}
+
+.house-img {
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+}
+
+.house-img:hover {
+    filter: brightness(1);
+}
+
+#floor {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -23vh;
+    z-index: 20;
+}
+
+#city {
+    position: absolute;
+    right: 0;
+    bottom: -5vh;
+    width: 70%;
+    z-index: 10;
+}
+
+#street p {
+    position: absolute;
+    right: 18vw;
+    top: 43vh;
+    width: 35vw;
+    z-index: 21;
+}
+
+#lady {
+    position: absolute;
+    height: 100vh;
+    z-index: 22;
+    bottom: -13vh;
+    left: 5vw;
+}
+
+#girl {
+    position: absolute;
+    height: 60vh;
+    z-index: 22;
+    bottom: -13vh;
+    left: 27vw;
+}
+
+#how-house-changed {
+    padding-top: 30vh;
+}
+
+.timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    background: #E5E5D6;
+    top: 90px;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.circle {
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: #E5E5D6;
+    color: #4A2F2E;
+    /*TODO тут что-то странное с жирным шрифтом*/
+    /*font-weight: bold;*/
+    cursor: pointer;
+}
+
+.circle:hover {
+    background: #FAA691;
+    color: white;
+}
+
+.girl-domik {
+    position: relative;
+    transform: translateY(5%);
+    height: 60vh;
+}
+
+.matryoshka-container {
+    padding-bottom: 10vh;
+}
+
+.matryoshka .big {
+    height: 50vh;
+}
